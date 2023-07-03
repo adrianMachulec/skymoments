@@ -1,0 +1,38 @@
+@import './../../sass/myFonts.scss';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.li{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    padding: 16px 32px;
+    font-size: $basicFullHDSize;
+    background-color: aqua;
+
+    &Active{
+        @extend .link;
+        background-color: red;
+    }
+}
+
+.logoImg{
+    height: 100px;
+    margin: 8px;
+}
