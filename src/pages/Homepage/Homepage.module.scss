@@ -36,10 +36,69 @@
       width: 80%;
       margin: 0;
       position: absolute;
-      bottom: -250px;
+      top: 960px;
       font-size: $basicFullHDSize;
       padding: 16px 32px;
       box-sizing: border-box;
+      text-align: justify;
+    }
+  }
+
+  &AboutMe {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 300px;
+    position: relative;
+
+    &Img {
+      width: 400px;
+      border-radius: 128px 32px;
+    }
+
+    &Text {
+      font-size: $basicFullHDSize;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+    }
+
+    &Line {
+      border-left: 4px solid $basicGold;
+      height: 1100px;
+      position: absolute;
+      left: 600px;
+      top: -100px;
+    }
+  }
+
+  &Portfolio {
+    background-color: $basicGold;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &Container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      &Elem {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        align-items: center;
+
+        &Img {
+          width: 300px;
+        }
+      }
     }
   }
 }
